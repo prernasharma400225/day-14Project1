@@ -20,6 +20,20 @@ const userSchema = new mongoose.Schema({
         type: String,
         default: "https://ik.imagekit.io/af6qb9ebno/default.avif",
     },
+
+/**2000 */
+    /** id = 12 bytss */
+
+    followers: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref:"users"
+    }],
+
+    /** 200 */
+    following: [ {
+        type: mongoose.Schema.Types.ObjectId,
+        ref:"users"
+    }],
 })
 
 
