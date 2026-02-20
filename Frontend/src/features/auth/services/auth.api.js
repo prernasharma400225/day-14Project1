@@ -30,7 +30,7 @@ export async function login(username, password) {
     catch(err) {
         throw err
     }
- }
+}
 
 export async function getMe(){
     try{

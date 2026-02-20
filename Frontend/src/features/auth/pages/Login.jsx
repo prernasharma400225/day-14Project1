@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import "../style/form.scss"
 import { Link, useNavigate } from "react-router"
 import { useAuth } from '../hooks/useAuth'
-import { useNavigate } from 'react-router'
+
 
 const Login = () => {
 
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
+   
 
     const { handleLogin,loading } = useAuth()
     const navigate = useNavigate()

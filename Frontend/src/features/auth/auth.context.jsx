@@ -15,7 +15,7 @@ export function AuthProvider({ children }){
 
         setLoading(true)
         try{
-            const response = await(username, password)
+            const response = await login(username, password)
             setUser (response.user)
         }
         catch(err){
@@ -32,7 +32,7 @@ export function AuthProvider({ children }){
 
         try{
 
-            const response = await require(username, email, password)
+            const response = await register(username, email, password)
 
             setUser (response.user)
 
