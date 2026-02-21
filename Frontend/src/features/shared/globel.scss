@@ -1,0 +1,18 @@
+@use "./button.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body,
+#root{
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    color: rgb(220, 220, 220);
+}
+a{
+    color: rgb(197, 2, 2);
+    text-decoration: none;
+}
