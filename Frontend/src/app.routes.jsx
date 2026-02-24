@@ -6,10 +6,6 @@ import Feed from "./features/posts/pages/Feed"
 
 
 export const router = createBrowserRouter([
-     {
-        path: '/',
-        element:<Feed/>
-     },
     {
         path: "/login", 
         element : <Login/>
@@ -17,5 +13,9 @@ export const router = createBrowserRouter([
     {
         path: "/register",
         element: <Register/>
-    }
+    },
+    {
+       path: '/',
+       element:<Feed/>
+    },
 ])
