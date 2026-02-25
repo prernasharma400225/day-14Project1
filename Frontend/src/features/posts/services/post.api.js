@@ -12,12 +12,13 @@ export async function getFeed() {
     return response.data
 }
 
+
 export async function createPost(imageFile, caption) {
 
     const formData = new FormData()
 
-    formData.append("image", imageFile)
-    formData.append("caption", caption)
+    formData.append("chacha", imageFile)
+    formData.append('caption', caption)
 
     const response = await api.post("/api/posts", formData)
 
@@ -25,11 +26,11 @@ export async function createPost(imageFile, caption) {
 }
 
 export async function likePost(postId) {
-    const response = await api.post("/api/posts/like" + postId)
+    const response = await api.post("/api/posts/like/" + postId)
     return response.data
 }
 
-export async function unlikePost(postId) {
-    const response = await api.post("/api/posts/unlike" + postId)
+export async function unLikePost(postId) {
+    const response = await api.post("/api/posts/unlike/" + postId)
     return response.data
 }
